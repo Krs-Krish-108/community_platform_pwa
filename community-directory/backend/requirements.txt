@@ -1,0 +1,36 @@
+# Core framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.1
+pydantic-settings==2.3.0
+email-validator==2.1.1   # required for pydantic EmailStr
+
+# Database
+motor==3.4.0          # Async MongoDB driver
+pymongo==4.7.2
+
+# Authentication & Security
+passlib==1.7.4
+bcrypt==4.0.1           # Pinned: passlib 1.7.4 is incompatible with bcrypt>=4.1
+cryptography==42.0.7
+webauthn==2.1.0       # py_webauthn — WebAuthn/Passkey verification
+pyotp==2.9.0
+
+# Email
+aiosmtplib==3.0.1
+
+# HTTP utilities
+httpx==0.27.0
+python-multipart==0.0.9  # For file uploads
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.1
+
+# Dev / testing
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0           # For TestClient async
+mongomock-motor==0.0.34 # In-memory MongoDB mock for tests without a live server
+boto3==1.34.106
+
